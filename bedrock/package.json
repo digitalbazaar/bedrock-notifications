@@ -1,0 +1,32 @@
+{
+  "name": "bedrock-notifications-test",
+  "version": "0.0.0-dev",
+  "description": "Bedrock bedrock-notifications test module",
+  "main": "./test",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/digitalbazaar/bedrock-notifications"
+  },
+  "keywords": [
+    "bedrock",
+    "notifications"
+  ],
+  "author": {
+    "name": "Digital Bazaar, Inc.",
+    "email": "support@digitalbazaar.com",
+    "url": "http://digitalbazaar.com"
+  },
+  "bugs": {
+    "url": "https://github.com/digitalbazaar/bedrock-notifications/issues"
+  },
+  "homepage": "https://github.com/digitalbazaar/bedrock-notifications",
+  "dependencies": {
+    "bedrock": "^1.0.0"
+  },
+  "directories": {
+    "lib": "./lib"
+  }
+}
