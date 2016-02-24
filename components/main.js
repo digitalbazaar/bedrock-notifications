@@ -9,8 +9,6 @@ define([
 
 'use strict';
 
-console.log("%%%%%%%%%%%%%%%%%%BEDROCK-NOTIFICATIONS-ANGULAR%%%%%%%%%%%%%%%%%%%%%%%%%5")
-
 var module = angular.module('bedrock-notifications', []);
 
 module.directive(notificationDirective);
