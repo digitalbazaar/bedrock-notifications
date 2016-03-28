@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) 2015-2016 Digital Bazaar, Inc. All rights reserved.
+ */
+/* globals describe, before, after, it, should, beforeEach, afterEach */
+/* jshint node: true */
 'use strict';
 
 var _ = require('lodash');
@@ -21,7 +26,7 @@ var store = database.collections.messages;
 var userSettings = database.collections.notificationPushUserSettings;
 
 var settingsEndpoint =
-  config.server.baseUri + config['notifications'].endpoints.settings;
+  config.server.baseUri + config.notifications.endpoints.settings;
 
 describe('bedrock-notifications HTTP API', function() {
   describe('unauthenticated requests', function() {
