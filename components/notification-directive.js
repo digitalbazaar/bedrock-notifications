@@ -33,23 +33,27 @@ function factory(brNotificationService, config) {
     model.settings = defaultSettings;
     var storedSettings = {};
 
-    brNotificationService.get(scope.userId)
-      .then(function(result) {
-        storedSettings = result.data;
-        // required so that angular extend does not link model.storedSettings
-        // with model.settings
-        var stored = angular.copy(storedSettings);
-        var def = angular.copy(defaultSettings);
-        angular.extend(model.settings, def, stored);
-        model.loading = false;
-        scope.$apply();
-      });
+    scope.$watch('userId', function() {
+      init();
+    });
+
+    function init() {
+      brNotificationService.get(scope.userId)
+        .then(function(result) {
+          storedSettings = result.data;
+          // required so that angular extend does not link model.storedSettings
+          // with model.settings
+          var stored = angular.copy(storedSettings);
+          var defaults = angular.copy(defaultSettings);
+          angular.extend(model.settings, defaults, stored);
+          model.loading = false;
+          scope.$apply();
+        });
+    }
 
     model.update = function() {
       model.loading = true;
-      var options = {
-        id: scope.userId
-      };
+      var options = {id: scope.userId};
       for(var type in model.settings) {
         if(type === 'id') {
           continue;
