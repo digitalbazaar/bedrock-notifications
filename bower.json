@@ -1,6 +1,6 @@
 {
   "name": "bedrock-notifications",
-  "version": "0.1.0",
+  "version": "0.1.1-dev",
   "moduleType": ["amd"],
   "main": "./components/main.js",
   "ignore": [
