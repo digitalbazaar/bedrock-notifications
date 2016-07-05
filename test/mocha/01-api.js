@@ -11,11 +11,11 @@ var async = require('async');
 var bedrock = require('bedrock');
 var brIdentity = require('bedrock-identity');
 var brMessages = require('bedrock-messages');
-var brNotifications = require('../lib/notifications');
+var brNotifications = require('bedrock-notifications');
 var config = bedrock.config;
 var database = require('bedrock-mongodb');
-var helpers = require('./helpers');
-var mockData = require('./mock.data');
+var helpers = require('../helpers');
+var mockData = require('../mock.data');
 var uuid = require('node-uuid').v4;
 
 var store = database.collections.messagesPush;

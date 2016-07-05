@@ -13,14 +13,14 @@ function factory($http, config) {
 
   service.get = function(id) {
     return Promise.resolve(
-      $http({method: 'GET', url: settingsEndpoint + '/' + id}));
+      $http({method: 'GET', url: settingsEndpoint + '/' + encodeURIComponent(id)}));
   };
 
   service.update = function(options) {
     return Promise.resolve(
       $http({
         method: 'POST',
-        url: settingsEndpoint + '/' + options.id,
+        url: settingsEndpoint + '/' + encodeURIComponent(options.id),
         data: options
       }));
   };

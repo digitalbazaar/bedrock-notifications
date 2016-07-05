@@ -4,7 +4,7 @@
   "description": "Bedrock notifications module",
   "main": "./lib/notifications",
   "scripts": {
-    "test": "node bedrock/test.js test"
+    "test": "node test/test.js test"
   },
   "repository": {
     "type": "git",

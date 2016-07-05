@@ -9,14 +9,14 @@ var _ = require('lodash');
 var async = require('async');
 var bedrock = require('bedrock');
 var brKey = require('bedrock-key');
-var brNotifications = require('../lib/notifications');
+var brNotifications = require('bedrock-notifications');
 var config = bedrock.config;
 var util = bedrock.util;
-var helpers = require('./helpers');
+var helpers = require('../helpers');
 var brIdentity = require('bedrock-identity');
 var database = require('bedrock-mongodb');
 var request = require('request');
-var mockData = require('./mock.data');
+var mockData = require('../mock.data');
 var uuid = require('node-uuid').v4;
 request = request.defaults({json: true});
 
