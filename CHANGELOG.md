@@ -1,5 +1,10 @@
 # bedrock-notifications ChangeLog
 
+## 0.1.2 - 2016-08-09
+
+### Changed
+- Namespace Protractor pages.
+
 ## 0.1.1 - 2016-07-07
 
 ### Changed
