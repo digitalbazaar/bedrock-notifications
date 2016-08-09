@@ -1,5 +1,10 @@
-var pages = GLOBAL.bedrock.pages || {};
+/*
+ * Copyright (c) 2015-2016 Digital Bazaar, Inc. All rights reserved.
+ */
 
-pages.notifications = require('./notifications');
+var pages = global.bedrock.pages || {};
 
-module.exports = GLOBAL.bedrock.pages = pages;
+pages['bedrock-notifications'] = {};
+pages['bedrock-notifications'].notifications = require('./notifications');
+
+module.exports = global.bedrock.pages = pages;
