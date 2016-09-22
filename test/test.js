@@ -4,5 +4,5 @@
 var bedrock = require('bedrock');
 require('bedrock-notifications');
 
+require('bedrock-test');
 bedrock.start();
-

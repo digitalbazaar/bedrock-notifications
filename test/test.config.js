@@ -5,7 +5,7 @@
 var config = require('bedrock').config;
 var path = require('path');
 
-config.mocha.tests.push(path.join(__dirname, '..', 'test', 'mocha'));
+config.mocha.tests.push(path.join(__dirname, 'mocha'));
 
 // MongoDB
 config.mongodb.name = 'bedrock_notifications_test';

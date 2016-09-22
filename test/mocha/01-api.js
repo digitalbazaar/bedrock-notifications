@@ -6,7 +6,6 @@
 
 'use strict';
 
-var _ = require('lodash');
 var async = require('async');
 var bedrock = require('bedrock');
 var brIdentity = require('bedrock-identity');
@@ -16,7 +15,6 @@ var config = bedrock.config;
 var database = require('bedrock-mongodb');
 var helpers = require('../helpers');
 var mockData = require('../mock.data');
-var uuid = require('node-uuid').v4;
 
 var store = database.collections.messagesPush;
 var userSettings = database.collections.notificationPushUserSettings;
