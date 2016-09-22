@@ -1,6 +1,6 @@
 {
   "name": "bedrock-notifications",
-  "version": "0.1.3",
+  "version": "0.1.4-0",
   "description": "Bedrock notifications module",
   "main": "./lib",
   "scripts": {},
