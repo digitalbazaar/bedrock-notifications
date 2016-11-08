@@ -1,5 +1,10 @@
 # bedrock-notifications ChangeLog
 
+## 0.1.4 - 2016-11-08
+
+### Changed
+- Remove bedrock-messages-push dependency.
+
 ## 0.1.3 - 2016-09-22
 
 ### Changed
